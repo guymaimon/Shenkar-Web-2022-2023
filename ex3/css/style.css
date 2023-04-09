@@ -58,6 +58,12 @@ header > nav > a:hover > span {
   text-decoration-style: wavy;
   transition: color 0.5s ease-in;
 }
+header > nav > a.selected:hover > span {
+  transition: none;
+  text-decoration: none;
+  text-decoration-style: none;
+  color: #000000;
+}
 
 header > nav > a > span {
   font-family: "Amiko";
@@ -277,7 +283,6 @@ main #THE-MIX {
 }
 
 /*                                   Layout2                                         */
-
 #wrapper_lay_2 {
   flex-direction: row;
   display: flex;
@@ -285,13 +290,9 @@ main #THE-MIX {
   height: 1860px;
   margin: 0px auto;
 }
-
 #wrapper_lay_2 > section > div {
   display: flex;
 }
-
-/* section#left == child1*/
-
 #wrapper_lay_2 > section:nth-child(1) {
   display: flex;
   flex-direction: column;
@@ -301,9 +302,6 @@ main #THE-MIX {
   margin-left: 151px;
   margin-right: 27.5px;
 }
-
-/* section#middle == child2*/
-
 #wrapper_lay_2 > section:nth-child(2) {
   display: flex;
   flex-direction: column;
@@ -313,24 +311,14 @@ main #THE-MIX {
   margin-left: 27.5px;
   margin-right: 151px;
 }
-
-/* section#right == child3*/
-
 #wrapper_lay_2 > section:nth-child(3) {
   display: flex;
   flex-direction: column;
   width: 169px;
-  height: 1925px;
+  height: 2146px;
   background-color: #6ebb7a;
+  margin-left: 151px;
 }
-
-/* section#left == child1*/
-/* <div class="box1"> == nth-child(1)*/
-/* <div class="box2"> == nth-child(2)*/
-/* <div class="box3"> == nth-child(3)*/
-/* <div class="box4"> == nth-child(4)*/
-/* <div class="box5"> == nth-child(5)*/
-
 #wrapper_lay_2 > section:nth-child(1) > div:nth-child(1),
 #wrapper_lay_2 > section:nth-child(1) > div:nth-child(2),
 #wrapper_lay_2 > section:nth-child(1) > div:nth-child(3),
@@ -352,14 +340,6 @@ main #THE-MIX {
 #wrapper_lay_2 > section:nth-child(1) > div:nth-child(5) {
   height: 265px;
 }
-
-/* section#middle == child2*/
-/* <div class="box6"> == nth-child(1)*/
-/* <div class="box7"> == nth-child(2)*/
-/* <div class="box8"> == nth-child(3)*/
-/* <div class="box9"> == nth-child(4)*/
-/* <div class="box10"> == nth-child(5)*/
-
 #wrapper_lay_2 > section:nth-child(2) > div:nth-child(1),
 #wrapper_lay_2 > section:nth-child(2) > div:nth-child(2),
 #wrapper_lay_2 > section:nth-child(2) > div:nth-child(3),
@@ -376,24 +356,15 @@ main #THE-MIX {
 #wrapper_lay_2 > section:nth-child(2) > div:nth-child(5) {
   margin-top: 70px;
 }
-
-/* section#right == child3*/
-/* section#top == child1*/
-/* <div class="box11"> == nth-child(1)*/
-/* <div class="box12"> == nth-child(2)*/
-/* <div class="box13"> == nth-child(3)*/
-
 #wrapper_lay_2 > section:nth-child(3) > section:nth-child(1) {
   display: flex;
   flex-direction: column;
   width: 169px;
   height: 1264px;
 }
-
 #wrapper_lay_2 > section:nth-child(3) > section:nth-child(1) > div {
   display: flex;
 }
-
 #wrapper_lay_2
   > section:nth-child(3)
   > section:nth-child(1)
@@ -403,7 +374,6 @@ main #THE-MIX {
   height: 80px;
   background-color: black;
 }
-
 #wrapper_lay_2
   > section:nth-child(3)
   > section:nth-child(1)
@@ -414,7 +384,6 @@ main #THE-MIX {
   height: 80px;
   background-color: rgb(26, 183, 81);
 }
-
 #wrapper_lay_2
   > section:nth-child(3)
   > section:nth-child(1)
@@ -424,23 +393,19 @@ main #THE-MIX {
   height: 80px;
   background-color: black;
 }
-
-/* section#right == child3*/
-/* section#down == child2*/
-
 #wrapper_lay_2 > section:nth-child(3) > section:nth-child(2) {
   display: flex;
   flex-direction: column;
   text-align: center;
   width: 169px;
   height: 641px;
-}
 
+}
 #wrapper_lay_2 > section:nth-child(3) > section:nth-child(2) > div {
   display: flex;
 }
-
 #wrapper_lay_2 > section:nth-child(3) > section:nth-child(2) > a {
+  margin-top: 140px;
   margin-left: 44px;
   width: 81px;
   height: 641px;
@@ -450,9 +415,8 @@ main #THE-MIX {
   font-size: 96px;
   line-height: 128px;
   text-decoration-line: none;
-  color: #000000;
+  color: rgb(0, 0, 0);
 }
-
 /*                                   Layout3                                         */
 
 #wrapper_lay_3 {
@@ -462,9 +426,6 @@ main #THE-MIX {
   height: 1459px;
   margin: 0px auto;
 }
-
-/* section#left == section:nth-child(1) */
-
 #wrapper_lay_3 > section:nth-child(1) {
   display: flex;
   flex-direction: column;
@@ -472,9 +433,6 @@ main #THE-MIX {
   width: 372px;
   background-color: #6fc773;
 }
-
-/* nav */
-
 #wrapper_lay_3 > section:nth-child(1) > nav {
   position: relative;
   height: 100%;
@@ -482,7 +440,6 @@ main #THE-MIX {
   justify-content: center;
   align-items: center;
 }
-
 #wrapper_lay_3 > section:nth-child(1) > nav > a {
   height: 100%;
   margin-right: 18px;
@@ -490,14 +447,12 @@ main #THE-MIX {
   align-items: center;
   margin-bottom: 620px;
 }
-
 #wrapper_lay_3 > section:nth-child(1) > nav > a:hover > span {
   color: #ffffff;
   text-decoration: underline;
   text-decoration-style: wavy;
   transition: color 0.5s ease-in;
 }
-
 #wrapper_lay_3 > section:nth-child(1) > nav > a > span {
   font-family: "Amiko";
   font-style: normal;
@@ -505,7 +460,6 @@ main #THE-MIX {
   font-size: 24px;
   line-height: 32px;
 }
-
 #wrapper_lay_3 > section:nth-child(1) > nav > a.selected {
   background-image: radial-gradient(
     circle at 50% 47%,
@@ -513,30 +467,25 @@ main #THE-MIX {
     transparent 6px
   );
 }
-
 #wrapper_lay_3 > section:nth-child(1) > div {
   display: flex;
 }
-
 #wrapper_lay_3 > section:nth-child(2) {
   display: flex;
   flex-direction: column;
   height: 995px;
   width: 964px;
 }
-
 #wrapper_lay_3 > section:nth-child(2) > div:nth-child(1) {
   display: flex;
   height: 463px;
   margin-top: 995px;
 }
-
 div#wrapper_lay_3 > section:nth-child(3) > div:nth-child(1) {
   width: 104px;
   height: 995px;
   background: #87a08a;
 }
-
 #wrapper_lay_3 > section:nth-child(4) {
   display: flex;
   position: absolute;
@@ -549,39 +498,32 @@ div#wrapper_lay_3 > section:nth-child(3) > div:nth-child(1) {
   order: 4;
   justify-content: center;
 }
-
 footer {
   position: fixed;
   height: 41px;
   bottom: 0;
   background-color: #000000;
 }
-
 @media only screen and (max-width: 486px) {
   header {
     width: 100%;
     height: 123px;
     background: #f2e9e9;
   }
-
   #wrapper_lay_3 > section:nth-child(1) {
     width: 100%;
   }
-
   #wrapper_lay_3 {
     width: 100%;
     display: flex;
     flex-direction: column;
   }
-
   #right {
     display: none;
   }
-
   #middle {
     display: none;
   }
-
   #wrapper_lay_3 > section:nth-child(1) {
     display: flex;
     flex-direction: column;
@@ -590,7 +532,6 @@ footer {
     background: #e5e5e5;
     top: 123px;
   }
-
   #new-section {
     width: 1440px;
     height: 474px;
@@ -598,7 +539,6 @@ footer {
     top: 1574px;
     background: #ebef18;
   }
-
   #wrapper_lay_3 > section:nth-child(1) > nav > a {
     height: 100%;
     margin-right: 18px;
@@ -606,7 +546,6 @@ footer {
     align-items: center;
     margin-bottom: 0px;
   }
-
   #wrapper_lay_3 > section:nth-child(1) > nav > a.selected {
     background-image: radial-gradient(
       circle at 50% 30%,
@@ -614,7 +553,6 @@ footer {
       transparent 6px
     );
   }
-
   #wrapper_lay_3 > section:nth-child(4) {
     display: flex;
     position: absolute;
@@ -627,7 +565,6 @@ footer {
     order: 4;
     justify-content: center;
   }
-
   footer {
     position: fixed;
     width: 1440px;
