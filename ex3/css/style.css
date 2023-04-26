@@ -1,0 +1,380 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body, html {
+    height: 100%;
+    position: relative;
+}
+#body2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+#wrapper1{
+    width: 100%;
+    height: 100%;
+    margin:0 auto;
+}
+#wrapper2 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#body-l3{
+    height: 1624px;
+}
+span{
+    display: block;
+}
+header, main, footer, nav, aside, section  {
+    display: block;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+}
+header, footer, main {
+    width: 100%;
+}
+header {
+    background-color: #5fa38b;
+    height: 123px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+nav > a {
+    margin-right: 18px;
+    height: 105px;
+    display: flex;
+    align-items: center;
+}
+nav a:hover > span {
+    font-weight: 700;
+}
+nav > a > span {
+    font-family: 'Amiko';
+    font-weight: 400;
+    font-size: 24px;
+}
+nav > a.selected {
+    background-image: radial-gradient(circle at 50% 20%, red 7px, transparent 6px);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+}
+.rec {
+    background-color: #22765e;
+    margin-bottom: 11px;
+    margin-left: 13px;
+}
+#index {
+    display: flex;
+    flex-direction: row;
+    height: calc(100% - 123px - 41px);
+}
+
+#Text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#Text p:nth-child(1) {
+    font-size: 72px;
+    font-family: 'Amiko';
+    font-weight: 700;
+}
+#Text p:nth-child(2) {
+    font-size: 24px;
+    font-family: 'Amiko';
+    font-weight: 700;
+}
+#Rec_Logo {
+    margin-left: 70px;
+}
+
+#Rec_Logo > section:nth-child(1) > section:nth-child(1){
+    margin-top: 44px;
+}
+#Rec_Logo > section:nth-child(1) > section:nth-child(1) > section:nth-child(1) {
+    width: 75px;
+    height: 23px;
+}
+#Rec_Logo > section:nth-child(1) > section:nth-child(1) > section:nth-child(2) {
+    width: 136px;
+    height: 46px;
+}
+#Rec_Logo > section:nth-child(1) > section:nth-child(1) > section:nth-child(3) {
+    width: 134px;
+    height: 404px;
+}
+#Rec_Logo > section:nth-child(1) > section:nth-child(1) > section:nth-child(4) {
+    width: 88px;
+    height: 28px;
+}
+#Rec_Logo > section:nth-child(1) > section:nth-child(1) > .row > .rec {
+    width: 25px;
+    height: 26px;
+}
+#Rec_Logo > section:nth-child(1) > section:nth-child(2) > section:nth-child(1) > .rec {
+    width: 246px;
+    height: 352px;
+    margin-top: 44px;
+}
+#Rec_Logo > section:nth-child(1) > section:nth-child(2) > section:nth-child(1) > .column > .rec {
+    width: 28px;
+    height: 55px;
+    margin-bottom: 11px;
+}
+#Rec_Logo > section:nth-child(1) > section:nth-child(2) > section:nth-child(1) > .column > section:nth-child(4) {
+    height: 198px;
+}
+#Rec_Logo > section:nth-child(1) > section:nth-child(2) > section:nth-child(2) > section:nth-child(1) {
+    width: 123px;
+    height: 211px;
+}
+#Rec_Logo > section:nth-child(1) > section:nth-child(2) > section:nth-child(2) > section:nth-child(2) > section:nth-child(1) > .rec {
+    width: 55px;
+    height: 105px;
+}
+#Rec_Logo > section:nth-child(1) > section:nth-child(2) > section:nth-child(2) > section:nth-child(2) > section:nth-child(1) > section:nth-child(2) {
+    margin-left: 41px;
+}
+#Rec_Logo > section:nth-child(1) > section:nth-child(2) > section:nth-child(2) > section:nth-child(2) > .rec{
+    width: 110px;
+    height: 58px;
+}
+
+/* layout2 */
+
+#frame{
+    display: flex;
+    flex-direction: row;
+}
+#frame > section:nth-child(1){
+    margin-left: 151px;
+    margin-top: 119px;
+}
+#frame > section:nth-child(2){
+    margin-left: 55px;
+    margin-top:287px;
+}
+#frame div{
+    height: 299px;
+    width: 457px;
+    background-color: #326e3d;
+    margin-bottom: 70px;
+}
+
+#aside2{
+    float: right;
+    background-color: #397e57;
+    width: 169px;
+    margin-left: 151px;
+}
+#aside2 > section:nth-child(1){
+    margin-top: 119px;
+    height: 80px;
+    width: 80px;
+    background-color: #000000;
+}
+#aside2 > section:nth-child(2){
+    margin-top: 48px;
+    margin-left:89px;
+    height: 80px;
+    width: 80px;
+    background-color:#FFFFFF;
+}
+#aside2 > section:nth-child(3){
+    margin-top: 289px;
+    margin-bottom: 544px;
+    height: 80px;
+    width: 80px;
+    background-color: #000000;
+}
+#My-Name{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Amiko';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 128px;
+    text-align: center;
+    margin-top: 760px;
+    color: #000000;
+    gap: 100px;
+}
+
+/* layout3 */
+#layout3 {
+    display: flex;
+    flex-direction: row;
+    height: 995px;
+}
+
+#nav_l3 {
+    background-color: #aac0b3;
+    width: 372px;
+    height: 100%;
+}
+#nav_l3 > nav {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    height: 100%;
+}
+
+#nav_l3 > nav > a {
+    margin-right: 18px;
+    margin-left: 18px;
+    margin-top: 123px;
+    height: 105px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+main{
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+/* start_game */
+header > section:nth-child(1) {
+    width: 80px;
+    height: 80px;
+    background-color: #000000;
+    float: right;
+    margin-top: 21px;
+    margin-right: 21px;
+}
+
+#The_Game {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    align-content: flex-start;
+    justify-content: center;
+}
+#The_Game > section {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 64px;
+    margin-top: 123px;
+    margin-left: 64px;
+    margin-right: 64px;
+}
+
+#blue_aside {
+    background-color: #aac0b3;
+    width: 104px;
+    flex-shrink: 1;
+}
+
+#yellow-section {
+    height: 463px;
+    width: 100%;
+    background-color: #619985;
+}
+footer{
+    height: 41px;
+    bottom: 0;
+    background-color: #000000;
+}
+#fixed{
+    position: fixed;
+}
+
+/* responsive */
+@media screen and (max-width: 1080px){
+    main{
+        flex-grow: 1;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        height: calc(100% - 123px - 41px - 400px); 
+        flex-direction: row;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+    #yellow-section {
+        background-color: #EBEF18;
+        height:20.207%;
+        bottom: 20px;
+        margin-top: 253px;
+    }
+    #The_Game {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 105px;
+        align-content: flex-start;
+        top: 308px;
+        justify-content: center;
+    }
+    #The_Game > section {
+        background-color: #000000;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 64px;
+        margin-top: 40px;
+        margin-left: 64px;
+        margin-right: 64px;
+        width: 100%;
+        height: 405px;
+    }
+    #nav_l3 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 105px;
+        background-color: #E5E5E5;
+    }
+    #nav_l3 > nav > a {
+        margin-right: 18px;
+        margin-left: 18px;
+        margin-top: 10px;
+        height: 105px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } 
+    #layout3 {
+        display: flex;
+        flex-direction: column;
+        height: calc(100% - 123px - 41px - 400px); 
+    }
+    #blue_aside {
+        display: none;
+    }
+}
+
+
